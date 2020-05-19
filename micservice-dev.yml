@@ -1,15 +1,5 @@
-server:
-  port: 8087
-spring:
-  application:
-    name: micservice-getway
-eureka:
-  client:
-    service-url:
-      defaultZone: http://admin:admin@127.0.0.1:8100/eureka/, http://admin:admin@127.0.0.1:9100/eureka/
-    register-with-eureka: true
-    fetch-registry: true
-zuul:
-  routes:
-    micservice-order:
-    micservice-item:
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+  username: root
+  password: 123456
