@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    micservice-item:
+    micservice-order:
+management:
+ endpoints:
+   web:
+     exposure:
+       include:
+         - "*"
